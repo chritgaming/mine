@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(img/cover.jpg);
+    background-size: cover;
+}
+
+header {
+    background-color: #04364a;
+    color: #DAFFFB;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #DAFFFB;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: #176B87;
+}
+nav {
+    background-color: #176B87;
+    color: #DAFFFB;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #DAFFFB;
+    font-weight: bold;
+}
+nav ul li:hover{
+    background-color: #04364a;
+    border: 1px solid #DAFFFB;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #176B87;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.news {
+    float: right;
+}
+footer {
+    background-color: #04364a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>CurtSpace</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="profile.html" class="dropbtn">Profile &#x25BE;</a><br>
+                <div class="dropdown-content">
+                    <a href="pictures.html">Pictures</a><br>
+                    <a href="videos.html">Videos</a>
+                </div>
+            </li>
+            <li class="news"><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

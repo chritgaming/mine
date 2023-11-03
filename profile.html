@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+</head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url(img/cover.jpg);
+    background-size: cover;
+}
+p{
+    color:#DAFFFB;
+    text-align: justify;
+}
+header {
+    background-color: #04364a;
+    color: #DAFFFB;
+    padding: 10px 0;
+    text-align: center;
+}
+h2{
+    color: #04364a;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h2 span{
+    color: #176B87;
+}
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #DAFFFB;
+    text-align: center;
+    text-transform: uppercase;
+}
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .profile-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .profile-info {
+        margin-left: 30px;
+    }
+}
+
+nav {
+    background-color: #176B87;
+    color: #DAFFFB;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #DAFFFB;
+    font-weight: bold;
+}
+nav ul li:hover{
+    background-color: #04364a;
+    border: 1px solid #DAFFFB;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #176B87;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.news {
+    float: right;
+}
+
+footer {
+    background-color: #04364a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>CurtSpace</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="profile.html" class="dropbtn">Profile &#x25BE;</a><br>
+                <div class="dropdown-content">
+                    <a href="pictures.html">Pictures</a><br>
+                    <a href="videos.html">Videos</a>
+                </div>
+            </li>
+            <li class="news"><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="profile-container">
+            <img src="img/1.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="profile-info">
+                <h2>Rikzon John M. Aleson, <span>Web Developer</span></h2>
+                <p>
+                    Rikzon John M. Aleson, a 26-year-old resident of #10 Cordero Street, Sta. Lucia, Narvacan, Ilocos Sur, Philippines, was born on September 08, 1997. <br>
+                    He is the beloved son of Mary Jane Aleson and Gerald Aleson. Rikzon's early educational journey began at Narvacan North Central School, 
+                    where he laid the foundation for his academic pursuits. During his formative years, he exhibited a passion for learning and a natural inclination towards technology and information.
+                    Upon completing his elementary education, Rikzon moved on to Narvacan National Central High School for his secondary studies. Throughout high school, he displayed exceptional dedication to his studies, garnering knowledge and skills that paved the way for his future endeavors.
+                    Currently, Rikzon is furthering his education at Ilocos Sur Polytechnic State College, also known as the University of Ilocos, where he is pursuing a degree in Information Technology. His choice of field reflects his keen interest in the ever-evolving world of technology, a domain where he aspires to make significant contributions.
+                    Living in the close-knit community of Narvacan, Rikzon is known for his friendly demeanor and his willingness to help others. His supportive family, consisting of his parents Mary Jane and Gerald, has been a constant source of encouragement throughout his academic journey.
+                    As he continues his studies in Information Technology, Rikzon John M. Aleson looks forward to exploring the realms of technology, harnessing its power to innovate, and positively impact his community and beyond. His determination and passion serve as a driving force, propelling him towards a promising future in the world of IT.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
